@@ -1,0 +1,10 @@
+/* ------------- THEME COLORS ------------- */
+:root {
+  --primary-color: #de1e22;
+  /* --primary-color: #ff3c00; */
+  --secondary-color: #ca8700;
+  --primary-text-color: #2d2d2d;
+  --secondary-text-color: #58647b;
+  --grey-text-color: #58647b;
+  --grey-light-color: #eaeaea;
+}
