@@ -1,0 +1,25 @@
+.navbar {
+  padding: 1.5rem 0;
+}
+
+.navbar__top {
+  display: flex;
+}
+.navbar__menuBars {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+}
+.navbar__top #menu-toggle {
+  display: none;
+}
+.navbar__brand {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
