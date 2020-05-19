@@ -103,6 +103,15 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+
+            <hr className="navbar__separator" />
+
+            <a
+              href={profile?.accounts?.upwork}
+              className="navbar__hireBtn text-center text-white rounded"
+            >
+              Hire Me on Upwork
+            </a>
           </div>
         </div>
       </nav>
