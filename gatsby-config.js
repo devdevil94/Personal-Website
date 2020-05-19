@@ -5,12 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  siteMetadata: {
-    title: `Devdevil Portfolio`,
-    description: `I am a web developer from Oman. I specialize in  JavaScript, CSS, HTML, and React.js framework`,
-    author: `Saud Alawi`,
-  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
