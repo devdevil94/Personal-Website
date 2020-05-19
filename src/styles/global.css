@@ -129,6 +129,9 @@ a {
 .text-dark {
   color: var(--primary-text-color);
 }
+.text-center {
+  text-align: center;
+}
 
 .w-1\/2 {
   width: 50%;
