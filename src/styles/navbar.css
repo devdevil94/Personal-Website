@@ -4,22 +4,39 @@
 
 .navbar__top {
   display: flex;
+  align-items: center;
+  position: relative;
 }
 .navbar__menuBars {
   font-size: 2rem;
   padding: 0.5rem 1rem;
   border: 1px solid white;
 }
-.navbar__top #menu-toggle {
+.navbar #menu-toggle {
   display: none;
 }
 .navbar__brand {
-  text-align: center;
-  width: 100%;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.navbar__separator {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile__imgWrapper {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.profile__img {
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto;
 }
