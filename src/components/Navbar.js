@@ -24,6 +24,7 @@ export default function Navbar() {
     }
     fetchSiteConfig()
   }, [])
+  console.log(profile)
   return (
     <header className="bg-primary">
       <nav className="navbar">
@@ -53,6 +54,32 @@ export default function Navbar() {
                 {profile?.bio ?? "Hi there! Welcome to my website"}
               </p>
             </div>
+            <ul className="socialList">
+              <li className="socialList__item">
+                <a
+                  href={profile?.accounts?.twitter}
+                  className="rounded-full bg-white text-primary"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li className="socialList__item">
+                <a
+                  href={profile?.accounts?.github}
+                  className="rounded-full bg-white text-primary"
+                >
+                  <i className="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li className="socialList__item">
+                <a
+                  href={profile?.accounts?.codepen}
+                  className="rounded-full bg-white text-primary"
+                >
+                  <i className="fab fa-codepen"></i>
+                </a>
+              </li>
+            </ul>
             <hr className="navbar__separator" />
           </div>
         </div>
