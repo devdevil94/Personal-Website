@@ -3,9 +3,9 @@ import React from "react"
 export default function Navbar() {
   return (
     <header className="bg-primary">
-      <div className="navbar">
+      <nav className="navbar">
         <div className="container">
-          <div className="navbar__top ">
+          <div className="navbar__top">
             <label
               htmlFor="menu-toggle"
               className="navbar__menuBars text-white rounded"
@@ -15,10 +15,19 @@ export default function Navbar() {
             <div className="navbar__brand text-white">
               <span>Devdevil</span>
             </div>
-            <input type="checkbox" id="menu-toggle" />
+          </div>
+          <input type="checkbox" id="menu-toggle" />
+          <div className="navbar__side">
+            <div className="profile">
+              {/* <Img className="profile__img rounded-full" /> */}
+              <p className="profile__bio">
+                Hi, my name is Saud and welcome to my website!
+              </p>
+            </div>
+            <hr className="navbar__separator" />
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }
