@@ -1,6 +1,29 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Navbar() {
+  const data = useStaticQuery(graphql`
+    query {
+      avatar: file(relativePath: { eq: "portfolio_avatar.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, maxHeight: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const [profile, setProfile] = useState({})
+
+  useEffect(() => {
+    const fetchSiteConfig = async () => {
+      const siteData = (await import("../../static/siteConfig.json")).default
+
+      setProfile(siteData)
+    }
+    fetchSiteConfig()
+  }, [])
   return (
     <header className="bg-primary">
       <nav className="navbar">
@@ -12,16 +35,22 @@ export default function Navbar() {
             >
               <i className="fa fa-bars"></i>
             </label>
-            <div className="navbar__brand text-white">
-              <span>Devdevil</span>
-            </div>
+            <h1 className="navbar__brand text-white text-center">
+              {profile.brand}
+            </h1>
           </div>
           <input type="checkbox" id="menu-toggle" />
           <div className="navbar__side">
             <div className="profile">
-              {/* <Img className="profile__img rounded-full" /> */}
-              <p className="profile__bio">
-                Hi, my name is Saud and welcome to my website!
+              <div className="profile__imgWrapper">
+                <Img
+                  fluid={data.avatar.childImageSharp.fluid}
+                  alt={profile.author}
+                  className="profile__img rounded-full"
+                />
+              </div>
+              <p className="profile__bio text-white text-center">
+                {profile?.bio ?? "Hi there! Welcome to my website"}
               </p>
             </div>
             <hr className="navbar__separator" />
