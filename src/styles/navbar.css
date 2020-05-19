@@ -90,3 +90,15 @@
 .navLinks__item a i {
   margin-right: 1rem;
 }
+
+.navbar__hireBtn {
+  padding: 1.2rem 2rem;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navbar__hireBtn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
