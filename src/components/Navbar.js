@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export default function Navbar() {
   const data = useStaticQuery(graphql`
@@ -80,7 +80,29 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
+
             <hr className="navbar__separator" />
+
+            <ul className="navLinks">
+              <li className="navLinks__item">
+                <Link to="/">
+                  <i className="fa fa-user"></i>
+                  About Me
+                </Link>
+              </li>
+              <li className="navLinks__item">
+                <Link to="/blog">
+                  <i className="fa fa-blog"></i>
+                  Blog
+                </Link>
+              </li>
+              <li className="navLinks__item">
+                <Link to="/contact">
+                  <i className="fa fa-phone-alt"></i>
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
