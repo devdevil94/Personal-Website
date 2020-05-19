@@ -96,6 +96,8 @@
   display: block;
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
