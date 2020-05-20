@@ -1,5 +1,11 @@
 {
   "author": "Saud Alawi",
   "brand": "DevDevil",
-  "bio": "Hi, my name is Saud and welcome to my website!"
+  "bio": "Hi, my name is Saud and welcome to my website!",
+  "accounts": {
+    "twitter": "https://twitter.com",
+    "github": "https://github.com/devdevil94",
+    "codepen": "https://codepen.io/devdevil94",
+    "upwork": "https://www.upwork.com/o/profiles/users/~01e4777710eca59625/"
+  }
 }
