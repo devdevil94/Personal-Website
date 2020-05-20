@@ -1,7 +1,9 @@
 .navbar {
   padding: 1.5rem 0;
 }
-
+.navbar .container {
+  /* width: 100%; */
+}
 .navbar__top {
   display: flex;
   align-items: center;
@@ -46,8 +48,8 @@
   padding: 1.5rem 0;
 }
 .profile__img {
-  width: 15rem;
-  height: 15rem;
+  width: 11rem;
+  height: 11rem;
   margin: 0 auto;
 }
 
@@ -95,7 +97,7 @@
   padding: 1.2rem 2rem;
   display: block;
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
@@ -103,4 +105,16 @@
 }
 .navbar__hireBtn:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 992px) {
+  .navbar__menuBars {
+    visibility: hidden;
+  }
+  .navbar__side {
+    max-height: 100%;
+  }
+  .navbar .container {
+    width: auto;
+  }
 }
