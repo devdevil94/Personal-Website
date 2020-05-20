@@ -1,7 +1,9 @@
 {
   "author": "Saud Alawi",
   "brand": "DevDevil",
+  "tagline": "Front-end Web Developer",
   "bio": "Hi, my name is Saud and welcome to my website!",
+  "extendedBio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias beatae ea, voluptate corporis animi possimus amet ab illo dignissimos adipisci!",
   "accounts": {
     "twitter": "https://twitter.com",
     "github": "https://github.com/devdevil94",
