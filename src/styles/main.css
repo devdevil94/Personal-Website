@@ -4,6 +4,7 @@
 @import url("fontawsome/brands.min.css");
 @import url("fontawsome/solid.min.css");
 @import url("navbar.css");
+@import url("about-me.css");
 
 .pageWrapper {
   display: flex;
