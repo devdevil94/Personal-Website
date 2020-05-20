@@ -4,3 +4,28 @@
 @import url("fontawsome/brands.min.css");
 @import url("fontawsome/solid.min.css");
 @import url("navbar.css");
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.pageWrapper__header {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .pageWrapper {
+    flex-direction: row;
+  }
+  .pageWrapper__header {
+    width: 29rem;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .pageWrapper__main {
+    margin-left: 29rem;
+    overflow-x: hidden;
+  }
+}
