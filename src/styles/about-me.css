@@ -1,0 +1,17 @@
+.aboutSection {
+  padding: 4rem 0;
+}
+.aboutSection__name {
+  font-size: 4.5rem;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.aboutSection__tagline {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1.8rem;
+}
+.aboutSection__bio {
+  line-height: 1.5;
+}
