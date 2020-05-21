@@ -1,6 +1,8 @@
-.aboutSection {
-  padding: 4rem 0;
+.aboutSection,
+.skillsSection {
+  padding: 1.5rem 0;
 }
+
 .aboutSection__name {
   font-size: 4.5rem;
   font-family: "Oswald";
@@ -14,4 +16,58 @@
 }
 .aboutSection__bio {
   line-height: 1.5;
+}
+
+.skillsSection__header {
+  font-size: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 1.8rem;
+  font-family: "Oswald";
+  position: relative;
+}
+.skillsSection__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+.skillsSection__info {
+  line-height: 1.5;
+}
+.skillsSection__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.skillBox {
+}
+.skillBox__icons i {
+  margin-right: 0.75rem;
+  font-size: 3rem;
+}
+.skillBox__icons i.fa-react {
+  color: #00d8ff;
+}
+.skillBox__icons i.fa-js-square {
+  color: #f5de19;
+}
+.skillBox__icons i.fa-html5 {
+  color: #f16529;
+}
+.skillBox__icons i.fa-css3-alt {
+  color: #2d66f3;
+}
+.skillBox__icons i.fa-sass {
+  color: #cb6095;
+}
+
+.skillBox__title {
+  margin: 0.8rem 0;
+}
+.skillBox__description {
+  font-size: 1.4rem;
 }
