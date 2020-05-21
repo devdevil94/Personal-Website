@@ -85,7 +85,7 @@ export default function Navbar() {
           <ul className="navLinks">
             <li className="navLinks__item">
               <Link to="/">
-                <i className="fa fa-user"></i>
+                <i className="fa fa-user-secret"></i>
                 About Me
               </Link>
             </li>
