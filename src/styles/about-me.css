@@ -18,14 +18,14 @@
   line-height: 1.5;
 }
 
-.skillsSection__header {
+.skillsSection__title {
   font-size: 3rem;
   padding-left: 2rem;
   margin-bottom: 1.8rem;
   font-family: "Oswald";
   position: relative;
 }
-.skillsSection__header::before {
+.skillsSection__title::before {
   content: "";
   position: absolute;
   top: 0;
