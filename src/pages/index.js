@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import PostCard from "../components/PostCard"
 
-const Index = ({ data }) => {
+const IndexPage = ({ data }) => {
   const [profile, setProfile] = useState({})
 
   const posts = data.allMarkdownRemark.edges
@@ -111,7 +111,7 @@ const Index = ({ data }) => {
           </ul>
           <div className="text-center">
             <Link
-              to="/blog"
+              to="/blog/?page=1"
               className="recentPostsSection__button text-white bg-primary rounded"
             >
               View All Posts
@@ -154,4 +154,4 @@ export const recentPostsQuery = graphql`
   }
 `
 
-export default Index
+export default IndexPage
