@@ -108,6 +108,7 @@ export default function Navbar() {
           <a
             href={profile?.accounts?.upwork}
             target="_blank"
+            rel="noopener noreferrer"
             className="navbar__hireBtn text-center text-white rounded"
           >
             Hire Me on Upwork

@@ -109,7 +109,7 @@ const Index = ({ data }) => {
                   </h3>
                   <p className="postCard__excerpt">{post.excerpt}</p>
                   <span className="postCard__date text-grey">
-                    {post.frontmatter.date}
+                    Posted {post.frontmatter.date}
                   </span>
                 </div>
               </li>
@@ -132,11 +132,11 @@ export const recentPostsQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "MMM D, YYYY")
             tags
             img {
               childImageSharp {
-                fluid(maxWidth: 600, quality: 90) {
+                fluid(maxWidth: 600, quality: 90, maxHeight: 380) {
                   ...GatsbyImageSharpFluid
                 }
               }

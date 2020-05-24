@@ -10,11 +10,13 @@ export default function Layout({ children }) {
       </header>
       <main className="pageWrapper__main bg-white">
         {children}
-        <div className="container">
-          <footer>
-            <div>This is a footer</div>
-          </footer>
-        </div>
+        <footer className="footer">
+          <div className="container">
+            <div className="text-center">
+              Devdevil © {new Date().getFullYear()}
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   )
