@@ -22,7 +22,7 @@
 .postsSection__title {
   font-size: 3rem;
   padding-left: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   font-family: "Oswald";
   letter-spacing: 1px;
   position: relative;
@@ -43,7 +43,7 @@
 .skillsSection__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .skillBox {
@@ -75,19 +75,24 @@
   font-size: 1.4rem;
 }
 
+.postsSection {
+  margin-bottom: 2rem;
+}
 .postsSection__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .postCard {
-  background-color: #fafafa;
+  background-color: #f1f1f1;
+  overflow: hidden;
 }
 .postCard__body {
   padding: 1.5rem;
 }
 .postCard__title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .postCard__excerpt {
@@ -95,4 +100,24 @@
 }
 .postCard__date {
   font-size: 1.2rem;
+}
+
+.postsSection__button {
+  display: inline-block;
+  padding: 1.5rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .postsSection__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skillsSection__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .postsSection__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
