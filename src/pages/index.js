@@ -86,12 +86,15 @@ const Index = ({ data }) => {
           </ul>
         </div>
       </section>
+      <div className="container">
+        <hr className="rule" />
+      </div>
       <section className="postsSection text-dark">
         <div className="container">
           <h2 className="postsSection__title">Recent Blog Posts</h2>
           <ul className="postsSection__list">
             {(posts || []).map(({ node: post }) => (
-              <li key={post.id} className="postCard">
+              <li key={post.id} className="postCard rounded">
                 <Link to={`/blog/${post.fields.slug}`}>
                   <Img
                     alt={post.frontmatter.title}
@@ -115,6 +118,14 @@ const Index = ({ data }) => {
               </li>
             ))}
           </ul>
+          <div className="text-center">
+            <Link
+              to="/blog"
+              className="postsSection__button text-white bg-primary rounded"
+            >
+              View All Posts
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>
