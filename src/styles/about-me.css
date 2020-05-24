@@ -19,7 +19,7 @@
 }
 
 .skillsSection__title,
-.postsSection__title {
+.recentPostsSection__title {
   font-size: 3rem;
   padding-left: 2rem;
   margin-bottom: 4rem;
@@ -28,7 +28,7 @@
   position: relative;
 }
 .skillsSection__title::before,
-.postsSection__title::before {
+.recentPostsSection__title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -75,10 +75,10 @@
   font-size: 1.4rem;
 }
 
-.postsSection {
+.recentPostsSection {
   margin-bottom: 2rem;
 }
-.postsSection__list {
+.recentPostsSection__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -102,13 +102,13 @@
   font-size: 1.2rem;
 }
 
-.postsSection__button {
+.recentPostsSection__button {
   display: inline-block;
   padding: 1.5rem 2.4rem;
 }
 
 @media (min-width: 768px) {
-  .postsSection__list {
+  .recentPostsSection__list {
     grid-template-columns: 1fr 1fr;
   }
   .skillsSection__list {
@@ -117,7 +117,12 @@
 }
 
 @media (min-width: 992px) {
-  .postsSection__list {
+  .aboutSection,
+  .skillsSection,
+  .recentPostsSection {
+    padding: 3rem;
+  }
+  .recentPostsSection__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
