@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Layout from "./../components/Layout"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import PostCard from "../components/PostCard"
 
 const Index = ({ data }) => {
   const [profile, setProfile] = useState({})
@@ -98,26 +99,13 @@ const Index = ({ data }) => {
           <ul className="recentPostsSection__list">
             {(posts || []).map(({ node: post }) => (
               <li key={post.id} className="postCard rounded">
-                <Link to={`/blog/${post.fields.slug}`}>
-                  <Img
-                    alt={post.frontmatter.title}
-                    fluid={post.frontmatter.img.childImageSharp.fluid}
-                  />
-                </Link>
-                <div className="postCard__body">
-                  <h3 className="postCard__title">
-                    <Link
-                      to={`/blog/${post.fields.slug}`}
-                      className="text-dark"
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                  </h3>
-                  <p className="postCard__excerpt">{post.excerpt}</p>
-                  <span className="postCard__date text-grey">
-                    Posted {post.frontmatter.date}
-                  </span>
-                </div>
+                <PostCard
+                  title={post.frontmatter.title}
+                  slug={post.fields.slug}
+                  date={post.frontmatter.date}
+                  excerpt={post.excerpt}
+                  fluid={post.frontmatter.img.childImageSharp.fluid}
+                />
               </li>
             ))}
           </ul>
