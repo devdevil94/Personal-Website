@@ -7,6 +7,7 @@ date: 2019-09-13T06:16:32.623Z
 seo:
   description: >-
     In JavaScript, the Array.reduce accepts a callback function that 'reduces' the elements of an array to a single value.
+img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 <br>

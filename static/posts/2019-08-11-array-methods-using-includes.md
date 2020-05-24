@@ -7,6 +7,7 @@ tags:
 seo:
   description: >-
     In JavaScript, the Array.includes method returns either true or false based on whether the array includes a specific element or not.
+img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 <br>

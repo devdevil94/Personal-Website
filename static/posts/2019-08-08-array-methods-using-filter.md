@@ -9,6 +9,7 @@ seo:
     In JavaScript, the Array.filter method accepts a callback
     function and returns a new array that contains the elements
     that passed the test in the callback.
+img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 <br>

@@ -11,6 +11,7 @@ seo:
     The Array.map method, on the other hand, allows you to create a new
     array that consists of elements resulting from calling a function
     for each element in an array.
+img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 <br>
