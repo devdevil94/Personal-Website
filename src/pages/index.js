@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react"
 import Layout from "./../components/Layout"
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-export default function Index() {
+const Index = ({ data }) => {
   const [profile, setProfile] = useState({})
+
+  const posts = data.allMarkdownRemark.edges
 
   useEffect(() => {
     const fetchSiteConfig = async () => {
@@ -13,9 +17,8 @@ export default function Index() {
     fetchSiteConfig()
   }, [])
 
-  console.log(profile)
   const { author, tagline, extendedBio } = profile
-
+  console.log(posts)
   return (
     <Layout>
       <section className="aboutSection text-dark">
@@ -30,7 +33,7 @@ export default function Index() {
       </section>
       <section className="skillsSection text-dark">
         <div className="container">
-          <h2 className="skillsSection__header">Things I do</h2>
+          <h2 className="skillsSection__title">Things I do</h2>
           <p className="skillsSection__info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
             fugiat, distinctio culpa esse velit ducimus possimus neque sint
@@ -83,6 +86,70 @@ export default function Index() {
           </ul>
         </div>
       </section>
+      <section className="postsSection text-dark">
+        <div className="container">
+          <h2 className="postsSection__title">Recent Blog Posts</h2>
+          <ul className="postsSection__list">
+            {(posts || []).map(({ node: post }) => (
+              <li key={post.id} className="postCard">
+                <Link to={`/blog/${post.fields.slug}`}>
+                  <Img
+                    alt={post.frontmatter.title}
+                    fluid={post.frontmatter.img.childImageSharp.fluid}
+                  />
+                </Link>
+                <div className="postCard__body">
+                  <h3 className="postCard__title">
+                    <Link
+                      to={`/blog/${post.fields.slug}`}
+                      className="text-dark"
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                  </h3>
+                  <p className="postCard__excerpt">{post.excerpt}</p>
+                  <span className="postCard__date text-grey">
+                    {post.frontmatter.date}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </Layout>
   )
 }
+
+export const recentPostsQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: 3
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMM Do YYYY")
+            tags
+            img {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 90) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
+
+export default Index
