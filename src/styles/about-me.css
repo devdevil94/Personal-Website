@@ -18,14 +18,17 @@
   line-height: 1.5;
 }
 
-.skillsSection__title {
+.skillsSection__title,
+.postsSection__title {
   font-size: 3rem;
   padding-left: 2rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 3rem;
   font-family: "Oswald";
+  letter-spacing: 1px;
   position: relative;
 }
-.skillsSection__title::before {
+.skillsSection__title::before,
+.postsSection__title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -70,4 +73,26 @@
 }
 .skillBox__description {
   font-size: 1.4rem;
+}
+
+.postsSection__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.postCard {
+  background-color: #fafafa;
+}
+.postCard__body {
+  padding: 1.5rem;
+}
+.postCard__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.postCard__excerpt {
+  font-size: 1.4rem;
+}
+.postCard__date {
+  font-size: 1.2rem;
 }
