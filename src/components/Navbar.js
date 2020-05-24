@@ -80,7 +80,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <hr className="navbar__separator" />
+          <hr className="rule" />
 
           <ul className="navLinks">
             <li className="navLinks__item">
@@ -103,7 +103,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <hr className="navbar__separator" />
+          <hr className="rule" />
 
           <a
             href={profile?.accounts?.upwork}
@@ -111,7 +111,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="navbar__hireBtn text-center text-white rounded"
           >
-            Hire Me on Upwork
+            Hire Me
           </a>
         </div>
       </div>

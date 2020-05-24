@@ -18,6 +18,12 @@
   padding: 3rem 0;
 }
 
+.rule {
+  margin: 2rem 0 3.5rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 992px) {
   .pageWrapper {
     flex-direction: row;
