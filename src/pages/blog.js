@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react"
 import Layout from "./../components/Layout"
 import PostCard from "../components/PostCard"
-import { navigate } from "gatsby"
+import { navigate, graphql } from "gatsby"
 
 const BlogPage = ({ data, location }) => {
   const [page, setPage] = useState(1)
   const [pagePosts, setPagePosts] = useState([])
 
   const posts = data.allMarkdownRemark.edges
-
   const totalPosts = posts.length
-  const postsPerPage = 6
+  const postsPerPage = 9
   const totalPages = Math.floor(
     totalPosts % postsPerPage !== 0
       ? totalPosts / postsPerPage + 1
@@ -43,21 +42,44 @@ const BlogPage = ({ data, location }) => {
     updatePosts()
   }, [page])
 
+  const temp = new Array(totalPages).fill(0)
+
+  const toPage = num => {
+    setPage(num)
+    navigate(`/blog?page=${num}`)
+  }
+
   return (
     <Layout>
-      <ul className="postCardsSection__list">
-        {(pagePosts || []).map(({ node: post }) => (
-          <li key={post.id} className="postCard rounded">
-            <PostCard
-              title={post.frontmatter.title}
-              slug={post.fields.slug}
-              date={post.frontmatter.date}
-              excerpt={post.excerpt}
-              fluid={post.frontmatter.img.childImageSharp.fluid}
-            />
-          </li>
-        ))}
-      </ul>
+      <section className="blogPage text-dark">
+        <h1 className="blogPage__title">Blog Posts</h1>
+
+        <ul className="blogPage__list">
+          {(pagePosts || []).map(({ node: post }) => (
+            <li key={post.id} className="postCard rounded">
+              <PostCard
+                title={post.frontmatter.title}
+                slug={post.fields.slug}
+                date={post.frontmatter.date}
+                excerpt={post.excerpt}
+                fluid={post.frontmatter.img.childImageSharp.fluid}
+              />
+            </li>
+          ))}
+        </ul>
+
+        <div className="blogPage__pagination">
+          {(temp || []).map((_, i) => (
+            <button
+              key={i}
+              className="text-white bg-primary"
+              onClick={() => toPage(i + 1)}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
+      </section>
     </Layout>
   )
 }
