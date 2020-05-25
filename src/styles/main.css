@@ -5,7 +5,7 @@
 @import url("fontawsome/solid.min.css");
 @import url("navbar.css");
 @import url("about-me.css");
-@import url("post-cards.css");
+@import url("blog.css");
 
 .pageWrapper {
   display: flex;

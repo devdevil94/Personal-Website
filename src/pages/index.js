@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Layout from "./../components/Layout"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import PostCard from "../components/PostCard"
 
 const IndexPage = ({ data }) => {

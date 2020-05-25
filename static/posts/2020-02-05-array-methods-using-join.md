@@ -11,8 +11,6 @@ seo:
 img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
-<br>
-
 ### **join()**
 
 <br>
