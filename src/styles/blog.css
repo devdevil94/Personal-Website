@@ -1,7 +1,26 @@
+.blogPage__title {
+  font-size: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  position: relative;
+}
+.blogPage__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
 .postCardsSection {
   margin-bottom: 2rem;
 }
-.postCardsSection__list {
+.postCardsSection__list,
+.blogPage__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -32,7 +51,8 @@
 }
 
 @media (min-width: 768px) {
-  .postCardsSection__list {
+  .postCardsSection__list,
+  .blogPage__list {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -41,7 +61,8 @@
   .postCardsSection {
     padding: 3rem;
   }
-  .postCardsSection__list {
+  .postCardsSection__list,
+  .blogPage__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
