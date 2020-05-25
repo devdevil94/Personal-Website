@@ -93,10 +93,10 @@ const IndexPage = ({ data }) => {
       <div className="container">
         <hr className="rule" />
       </div>
-      <section className="recentPostsSection text-dark">
+      <section className="postCardsSection text-dark">
         <div className="container">
-          <h2 className="recentPostsSection__title">Recent Blog Posts</h2>
-          <ul className="recentPostsSection__list">
+          <h2 className="postCardsSection__title">Recent Blog Posts</h2>
+          <ul className="postCardsSection__list">
             {(posts || []).map(({ node: post }) => (
               <li key={post.id} className="postCard rounded">
                 <PostCard
@@ -112,7 +112,7 @@ const IndexPage = ({ data }) => {
           <div className="text-center">
             <Link
               to="/blog/?page=1"
-              className="recentPostsSection__button text-white bg-primary rounded"
+              className="postCardsSection__button text-white bg-primary rounded"
             >
               View All Posts
             </Link>
@@ -134,7 +134,7 @@ export const recentPostsQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMM D, YYYY")
+            date(formatString: "MMM D YYYY")
             tags
             img {
               childImageSharp {
