@@ -1,0 +1,47 @@
+.postCardsSection {
+  margin-bottom: 2rem;
+}
+.postCardsSection__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.postCard {
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.postCard__body {
+  padding: 1.5rem;
+}
+.postCard__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.postCard__excerpt {
+  font-size: 1.4rem;
+}
+.postCard__date {
+  font-size: 1.2rem;
+  margin-bottom: 10rem;
+}
+
+.postCardsSection__button {
+  display: inline-block;
+  padding: 1.5rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .postCardsSection__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .postCardsSection {
+    padding: 3rem;
+  }
+  .postCardsSection__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
