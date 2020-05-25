@@ -90,7 +90,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="navLinks__item">
-              <Link to="/blog/?page=1">
+              <Link to="/blog">
                 <i className="fa fa-blog"></i>
                 Blog
               </Link>

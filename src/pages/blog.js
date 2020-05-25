@@ -21,17 +21,23 @@ const BlogPage = ({ data, location }) => {
     const updatePosts = async () => {
       const newPage = new URLSearchParams(location.search).get("page")
 
-      if (!isNaN(newPage) && newPage >= 1 && newPage <= totalPages) {
-        const start = (newPage - 1) * postsPerPage
-        const end = start + postsPerPage
+      if (newPage) {
+        if (!isNaN(newPage) && newPage >= 1 && newPage <= totalPages) {
+          const start = (newPage - 1) * postsPerPage
+          const end = start + postsPerPage
 
-        setPage(newPage)
-        setPagePosts(posts.slice(start, end))
+          setPage(newPage)
+          setPagePosts(posts.slice(start, end))
+        } else {
+          // setPage(1)
+          // setPagePosts(posts.slice(0, postsPerPage))
+          // navigate("/blog/?page=1")
+          navigate("/404", { replace: true })
+        }
       } else {
-        // setPage(1)
-        // setPagePosts(posts.slice(0, postsPerPage))
-        // navigate("/blog/?page=1")
-        navigate("/404", { replace: true })
+        setPage(1)
+        setPagePosts(posts.slice(0, postsPerPage))
+        // navigate("/blog?page=1", { replace: true })
       }
     }
     updatePosts()
@@ -39,21 +45,19 @@ const BlogPage = ({ data, location }) => {
 
   return (
     <Layout>
-      <div className="container">
-        <ul className="postCardsSection__list">
-          {(pagePosts || []).map(({ node: post }) => (
-            <li key={post.id} className="postCard rounded">
-              <PostCard
-                title={post.frontmatter.title}
-                slug={post.fields.slug}
-                date={post.frontmatter.date}
-                excerpt={post.excerpt}
-                fluid={post.frontmatter.img.childImageSharp.fluid}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="postCardsSection__list">
+        {(pagePosts || []).map(({ node: post }) => (
+          <li key={post.id} className="postCard rounded">
+            <PostCard
+              title={post.frontmatter.title}
+              slug={post.fields.slug}
+              date={post.frontmatter.date}
+              excerpt={post.excerpt}
+              fluid={post.frontmatter.img.childImageSharp.fluid}
+            />
+          </li>
+        ))}
+      </ul>
     </Layout>
   )
 }
