@@ -11,7 +11,7 @@ seo:
 img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
-In [part 1](https://www.devdevil.me/introduction-to-web-components-html-templates), we created a simple card `<template>` that can be reused in a webpage. We will use the `<template>` tag again with the help of Custom Elements specification to create a simple `<product-card>` element, similar to the ones you see on ecommerce websites.<br>
+In [part 1](/blog/introduction-to-web-components-html-templates), we created a simple card `<template>` that can be reused in a webpage. We will use the `<template>` tag again with the help of Custom Elements specification to create a simple `<product-card>` element, similar to the ones you see on ecommerce websites.<br>
 
 ## Defining a custom element
 
@@ -109,7 +109,7 @@ class ProductCard extends HTMLElement {
 customElements.define("product-card", ProductCard)
 ```
 
-Just like in [part 1](https://www.devdevil.me/introduction-to-web-components-html-templates), we cloned the template's content using `importNode` but this time we did it in the `constructor` of the `ProductCard` class.<br> <br> The `<style>` tag was used to add some CSS to our custom element. You may've noticed the `:host` selector which allows you to style the shell of the custom element itself. It is considered a best practice to change the `display` property value from the default `inline` value to either `inline-block` or `block`.<br><br> We will keep track of the different DOM elements within the template that will play a part when re-rendering our custom element.
+Just like in [part 1](/blog/introduction-to-web-components-html-templates), we cloned the template's content using `importNode` but this time we did it in the `constructor` of the `ProductCard` class.<br> <br> The `<style>` tag was used to add some CSS to our custom element. You may've noticed the `:host` selector which allows you to style the shell of the custom element itself. It is considered a best practice to change the `display` property value from the default `inline` value to either `inline-block` or `block`.<br><br> We will keep track of the different DOM elements within the template that will play a part when re-rendering our custom element.
 
 ```javascript
 constructor() {
@@ -122,7 +122,7 @@ constructor() {
 }
 ```
 
-## Properties & attributes
+## Properties and attributes
 
 First, let's state the difference between the properties and attributes of an element:
 
