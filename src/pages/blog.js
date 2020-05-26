@@ -105,7 +105,7 @@ export const recentPostsQuery = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 100)
         }
       }
     }
