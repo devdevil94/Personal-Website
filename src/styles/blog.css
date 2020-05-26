@@ -1,16 +1,24 @@
-.blogPage {
-  padding: 3rem;
+.blogPage,
+.postPage {
+  padding: 3rem 0;
 }
-
-.blogPage__title {
-  font-size: 4.5rem;
+.blogPage__title,
+.postPage__title {
   padding-left: 2rem;
-  margin-bottom: 4rem;
   font-family: "Oswald";
   letter-spacing: 1px;
   position: relative;
 }
-.blogPage__title::before {
+.blogPage__title {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+}
+.postPage__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.blogPage__title::before,
+.postPage__title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -79,19 +87,58 @@
   border-radius: 5px 0 0 5px;
 }
 
+.postPage__body {
+  margin-top: 3rem;
+}
+.postPage__body h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  padding-top: 1.4rem;
+}
+.postPage__body p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+.postPage__body a {
+  color: var(--primary-color);
+}
+.postPage__body ol,
+.postPage__body ul {
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+}
+
+.postPage__date {
+  display: inline-block;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .postCardsSection__list,
   .blogPage__list {
     grid-template-columns: 1fr 1fr;
   }
+  .postPage__title {
+    font-size: 3.6rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .blogPage,
+  .postPage {
+    padding: 3rem;
+  }
+
   .postCardsSection {
     padding: 3rem;
   }
   .postCardsSection__list,
   .blogPage__list {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .postPage__title {
+    font-size: 4.5rem;
   }
 }
