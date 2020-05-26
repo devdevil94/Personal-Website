@@ -6,14 +6,18 @@ import Img from "gatsby-image"
 const SinglePost = ({ data }) => {
   const {
     html,
-    frontmatter: { title, date },
+    frontmatter: { title, date, img },
   } = data.markdownRemark
   return (
     <Layout>
-      <section className="blogPage text-dark">
-        <h1 className="blogPage__title">{title}</h1>
-
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <section className="postPage text-dark">
+        <h1 className="postPage__title">{title}</h1>
+        <span className="postPage__date text-grey">Posted {date}</span>
+        <Img alt={title} fluid={img.childImageSharp.fluid} />
+        <div
+          className="postPage__body"
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
       </section>
     </Layout>
   )
@@ -30,7 +34,7 @@ export const singlePostQuery = graphql`
         tags
         img {
           childImageSharp {
-            fluid(maxWidth: 700, quality: 90) {
+            fluid(maxWidth: 1000, quality: 90, maxHeight: 600) {
               ...GatsbyImageSharpFluid
             }
           }
