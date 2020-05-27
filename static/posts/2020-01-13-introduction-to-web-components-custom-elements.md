@@ -127,7 +127,7 @@ constructor() {
 First, let's state the difference between the properties and attributes of an element:
 
 - Attributes are available in the HTML itself and used only for primitive data like numbers, strings, Boolean values.
-- Properties can be considered as instance variables of a DOM node, used for primitive data as well as rich data like objects and arrays.<br><br>
+- Properties can be considered as instance variables of a DOM node, used for primitive data as well as rich data like objects and arrays.
 
 For our `<product-card>`, we simply need to show the product name, price, image (via URL) and description, and we will define the appropriate properties for the data.<br><br> A good practice when creating a custom element is to make sure that the properties are **reflected** to the corresponding attributes. However, it is important to NOT reflect rich data properties like objects and arrays to attributes and only reflect primitive data properties.
 
