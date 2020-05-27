@@ -23,6 +23,10 @@
   line-height: 1.5;
 }
 
+.contactForm {
+  max-width: 47rem;
+  margin: 0 auto;
+}
 .contactForm__title {
   font-size: 3rem;
   font-family: "Oswald";
@@ -65,4 +69,32 @@
 }
 .contactForm__submit {
   padding: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .inline-fields {
+    flex-direction: column;
+  }
+  .contactForm__input[name="name"],
+  .contactForm__input[name="email"] {
+    width: 100%;
+  }
+  .contactForm__input[name="name"] {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .contactPage {
+    padding: 3rem;
+  }
+  .inline-fields {
+    flex-direction: row;
+  }
+  .contactForm__input[name="name"],
+  .contactForm__input[name="email"] {
+    width: 48%;
+  }
+  .contactForm__input[name="name"] {
+    margin-bottom: 0;
+  }
 }
