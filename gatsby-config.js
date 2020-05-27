@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require(`autoprefixer`)({ stage: 0 })],
+        postCssPlugins: [require(`autoprefixer`)],
       },
     },
     {
