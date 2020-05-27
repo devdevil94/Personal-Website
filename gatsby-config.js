@@ -20,12 +20,7 @@ module.exports = {
         path: `${__dirname}/static/posts`,
       },
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require(`autoprefixer`)],
-      },
-    },
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -41,7 +36,7 @@ module.exports = {
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {},
+              // aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
             },
@@ -49,6 +44,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

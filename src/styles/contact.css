@@ -36,6 +36,11 @@
   padding: 1.4rem 1.2rem;
   border: 1px solid #c2c2c2;
 }
+.contactForm__input::placeholder,
+.contactForm__textarea::placeholder {
+  color: #c2c2c2;
+  font-size: 1.6rem;
+}
 .inline-fields {
   display: flex;
   justify-content: space-between;
