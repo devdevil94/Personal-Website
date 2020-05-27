@@ -210,5 +210,7 @@ Here's the demo for the our custom element on CodePen.<br>
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 <br>
+
 The element we created is working fine except for the fact that the element's styles still can fall in conflicts with the rest of the document. We need to encapsulate all the styles within our element, this can be solved by using the <strong>Shadow DOM</strong> which will be explored in the next post.
