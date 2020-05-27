@@ -1,0 +1,8 @@
+.contactPage {
+  padding: 3rem 0;
+}
+.contactPage__title {
+  font-size: 4.5rem;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+}
