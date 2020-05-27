@@ -54,7 +54,14 @@ export default function ContactPage() {
 
         <hr className="rule" />
 
-        <form className="contactForm text-center">
+        <form
+          method="POST"
+          name="contact-form"
+          className="contactForm text-center"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact-form" />
           <h2 className="contactForm__title">Get In Touch</h2>
           <div class="inline-fields">
             <input
