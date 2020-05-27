@@ -2,7 +2,62 @@
   padding: 3rem 0;
 }
 .contactPage__title {
+  padding-left: 2rem;
   font-size: 4.5rem;
   font-family: "Oswald";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.contactPage__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.contactPage__info {
+  line-height: 1.5;
+}
+
+.contactForm__title {
+  font-size: 3rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contactForm__input,
+.contactForm__textarea {
+  padding: 1.4rem 1.2rem;
+  border: 1px solid #c2c2c2;
+}
+.inline-fields {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contactForm__input[name="name"],
+.contactForm__input[name="email"] {
+  width: 100%;
+}
+.contactForm__input[name="name"] {
+  margin-bottom: 2rem;
+}
+.contactForm__input[name="subject"] {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contactForm__textarea[name="message"] {
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 2rem;
+}
+.contactForm__submit {
+  padding: 1rem 2rem;
 }
