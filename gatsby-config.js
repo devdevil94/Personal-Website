@@ -20,11 +20,17 @@ module.exports = {
         path: `${__dirname}/static/posts`,
       },
     },
-
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto`, `Material Icons`, `Oswald`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-145882805-1",
       },
     },
     {
