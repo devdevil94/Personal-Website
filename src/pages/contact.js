@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Layout from "./../components/Layout"
+import SEO from "../components/SEO"
 
 export default function ContactPage() {
   const [accounts, setAccounts] = useState({})
@@ -15,6 +16,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <SEO title="Contact" />
       <section className="contactPage text-dark">
         <div>
           <h1 className="contactPage__title">Contact</h1>

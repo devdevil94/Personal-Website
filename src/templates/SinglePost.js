@@ -2,14 +2,16 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "./../components/Layout"
 import Img from "gatsby-image"
+import SEO from "../components/SEO"
 
 const SinglePost = ({ data }) => {
   const {
     html,
-    frontmatter: { title, date, img },
+    frontmatter: { title, date, img, seo },
   } = data.markdownRemark
   return (
     <Layout>
+      <SEO title={title} description={seo.description} />
       <section className="postPage text-dark">
         <h1 className="postPage__title">{title}</h1>
         <span className="postPage__date text-grey">Posted {date}</span>
@@ -34,7 +36,7 @@ export const singlePostQuery = graphql`
         tags
         img {
           childImageSharp {
-            fluid(maxWidth: 1000, quality: 90, maxHeight: 600) {
+            fluid(maxWidth: 1000, quality: 90, maxHeight: 540) {
               ...GatsbyImageSharpFluid
             }
           }

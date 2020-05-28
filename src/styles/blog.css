@@ -73,17 +73,26 @@
   padding: 1.5rem 2.4rem;
 }
 
-.blogPage__pagination {
+.pagination {
   display: flex;
   justify-content: center;
 }
-.blogPage__pagination button {
+.pagination__btn {
   padding: 1rem 1.5rem;
+  margin-right: 1px;
 }
-.blogPage__pagination button:last-child {
+.pagination__btn:focus {
+  outline: none;
+}
+.pagination__btn--disabled {
+  background-color: var(--grey-light-color);
+  color: black;
+  cursor: auto;
+}
+.pagination__btn:last-child {
   border-radius: 0 5px 5px 0;
 }
-.blogPage__pagination button:first-child {
+.pagination__btn:first-child {
   border-radius: 5px 0 0 5px;
 }
 

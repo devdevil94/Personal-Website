@@ -105,14 +105,14 @@ export default function Navbar() {
 
           <hr className="rule" />
 
-          <a
+          {/* <a
             href={profile?.accounts?.upwork}
             target="_blank"
             rel="noopener noreferrer"
             className="navbar__hireBtn text-center text-white rounded"
           >
             Hire Me
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>

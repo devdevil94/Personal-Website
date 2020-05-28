@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Layout from "./../components/Layout"
 import PostCard from "../components/PostCard"
 import { navigate, graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 const BlogPage = ({ data, location }) => {
   const [page, setPage] = useState(1)
@@ -9,7 +10,7 @@ const BlogPage = ({ data, location }) => {
 
   const posts = data.allMarkdownRemark.edges
   const totalPosts = posts.length
-  const postsPerPage = 9
+  const postsPerPage = 3
   const totalPages = Math.floor(
     totalPosts % postsPerPage !== 0
       ? totalPosts / postsPerPage + 1
@@ -25,7 +26,7 @@ const BlogPage = ({ data, location }) => {
           const start = (newPage - 1) * postsPerPage
           const end = start + postsPerPage
 
-          setPage(newPage)
+          setPage(parseInt(newPage))
           setPagePosts(posts.slice(start, end))
         } else {
           // setPage(1)
@@ -51,6 +52,7 @@ const BlogPage = ({ data, location }) => {
 
   return (
     <Layout>
+      <SEO title="Blog" description={data.site.siteMetadata.description} />
       <section className="blogPage text-dark">
         <h1 className="blogPage__title">Blog Posts</h1>
 
@@ -68,16 +70,22 @@ const BlogPage = ({ data, location }) => {
           ))}
         </ul>
 
-        <div className="blogPage__pagination">
-          {(temp || []).map((_, i) => (
-            <button
-              key={i}
-              className="text-white bg-primary"
-              onClick={() => toPage(i + 1)}
-            >
-              {i + 1}
-            </button>
-          ))}
+        <div className="pagination">
+          {(temp || []).map((_, i) => {
+            console.log(page === i + 1, i + 1, page)
+            return (
+              <button
+                key={i}
+                className={`pagination__btn text-white bg-primary${
+                  page === i + 1 ? " pagination__btn--disabled" : ""
+                }`}
+                onClick={() => toPage(i + 1)}
+                disabled={page === i + 1 ? true : false}
+              >
+                {i + 1}
+              </button>
+            )
+          })}
         </div>
       </section>
     </Layout>
@@ -86,6 +94,11 @@ const BlogPage = ({ data, location }) => {
 
 export const recentPostsQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        description
+      }
+    }
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
