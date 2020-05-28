@@ -5,6 +5,12 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `DevDevil`,
+    description: `A blog for beginner web developers where I post tutorials, mainly about html, css, javascript and react.`,
+    author: `Saud Alawi`,
+    siteUrl: `https://www.devdevil.me`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
