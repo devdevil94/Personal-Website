@@ -34,11 +34,7 @@ const IndexPage = ({ data }) => {
 
       <section className="skillsSection text-dark">
         <h2 className="skillsSection__title">Things I do</h2>
-        <p className="skillsSection__info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          fugiat, distinctio culpa esse velit ducimus possimus neque sint animi
-          vero?
-        </p>
+        <p className="skillsSection__info">I</p>
         <ul className="skillsSection__list">
           <li className="skillBox">
             <div className="skillBox__icons">

@@ -21,10 +21,9 @@ export default function ContactPage() {
         <div>
           <h1 className="contactPage__title">Contact</h1>
           <p className="contactPage__info">
-            Interested in hiring me for your project or just want to say hi? You
-            can fill in the contact form below or send me an email to
-            simon.doe@yourwebsite.com Want to get connected? Follow me on the
-            social channels below.
+            If you're interested in hiring me for a project or just want to say
+            hi, you can fill in the contact form below. Also, feel free to
+            follow me on the social channels below &#128526;.
           </p>
           <ul className="socialList">
             <li className="socialList__item">
@@ -65,7 +64,7 @@ export default function ContactPage() {
         >
           <input type="hidden" name="form-name" value="contact-form" />
           <h2 className="contactForm__title">Get In Touch</h2>
-          <div class="inline-fields">
+          <div className="inline-fields">
             <input
               type="text"
               name="name"
