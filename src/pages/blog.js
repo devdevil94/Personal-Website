@@ -10,7 +10,7 @@ const BlogPage = ({ data, location }) => {
 
   const posts = data.allMarkdownRemark.edges
   const totalPosts = posts.length
-  const postsPerPage = 3
+  const postsPerPage = 9
   const totalPages = Math.floor(
     totalPosts % postsPerPage !== 0
       ? totalPosts / postsPerPage + 1
@@ -71,21 +71,18 @@ const BlogPage = ({ data, location }) => {
         </ul>
 
         <div className="pagination">
-          {(temp || []).map((_, i) => {
-            console.log(page === i + 1, i + 1, page)
-            return (
-              <button
-                key={i}
-                className={`pagination__btn text-white bg-primary${
-                  page === i + 1 ? " pagination__btn--disabled" : ""
-                }`}
-                onClick={() => toPage(i + 1)}
-                disabled={page === i + 1 ? true : false}
-              >
-                {i + 1}
-              </button>
-            )
-          })}
+          {(temp || []).map((_, i) => (
+            <button
+              key={i}
+              className={`pagination__btn text-white bg-primary${
+                page === i + 1 ? " pagination__btn--disabled" : ""
+              }`}
+              onClick={() => toPage(i + 1)}
+              disabled={page === i + 1 ? true : false}
+            >
+              {i + 1}
+            </button>
+          ))}
         </div>
       </section>
     </Layout>
