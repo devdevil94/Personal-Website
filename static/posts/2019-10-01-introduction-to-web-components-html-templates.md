@@ -11,7 +11,7 @@ seo:
 img: ../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
-Web components are a bunch of browser APIs working together to make creating reusable UI components easier. Those APIs include:
+Web components are a bunch of browser specifications working together to make the process of creating reusable UI components easier. Those specs include:
 
 - HTML Templates
 - Custom Elements

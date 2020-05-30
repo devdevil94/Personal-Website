@@ -35,8 +35,10 @@ export default function Navbar() {
           >
             <i className="fa fa-bars"></i>
           </label>
-          <h1 className="navbar__brand text-white text-center">
-            {profile.brand}
+          <h1 className="navbar__brand text-center">
+            <Link to="/" className="text-white">
+              {profile.brand}
+            </Link>
           </h1>
         </div>
         <input type="checkbox" id="menu-toggle" />

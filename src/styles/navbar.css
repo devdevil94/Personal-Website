@@ -38,6 +38,10 @@
   pointer-events: none;
 }
 
+.navbar__brand a {
+  pointer-events: all;
+}
+
 .profile__imgWrapper {
   width: 100%;
   padding: 1.5rem 0;
