@@ -13,17 +13,17 @@ export default function ContactPage() {
     }
     fetchSiteAccounts()
   }, [])
-
+  const info = `If you're interested in hiring me for a project or just want to say
+                hi, you can fill in the contact form below. Also, feel free to
+                follow me on the social channels below.`
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Contact" description={info} />
       <section className="contactPage text-dark">
         <div>
           <h1 className="contactPage__title">Contact</h1>
           <p className="contactPage__info">
-            If you're interested in hiring me for a project or just want to say
-            hi, you can fill in the contact form below. Also, feel free to
-            follow me on the social channels below.
+            {info}
             {/* <span role="img" aria-label="Smiley wearing glasses">
               &#128526;
             </span> */}

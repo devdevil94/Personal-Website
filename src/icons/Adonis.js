@@ -3,9 +3,9 @@ import React from "react"
 export default function Adonis() {
   return (
     <svg
-      width="110"
+      width="60"
       height="30"
-      viewBox="50 0 120 60"
+      viewBox="0 0 120 60"
       version="1.1"
       id="svg19"
       xmlns="http://www.w3.org/2000/svg"
