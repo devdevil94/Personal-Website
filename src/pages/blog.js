@@ -53,7 +53,7 @@ const BlogPage = ({ data, location }) => {
   return (
     <Layout>
       <SEO title="Blog" description={data.site.siteMetadata.description} />
-      <section className="blogPage text-dark">
+      <section className="blogPage">
         <h1 className="blogPage__title">Blog Posts</h1>
 
         <ul className="blogPage__list">

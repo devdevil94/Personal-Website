@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" description={extendedBio} />
-      <section className="aboutSection text-dark">
+      <section className="aboutSection">
         {/* <div> */}
         <h2 className="aboutSection__name">{author}</h2>
         <h3 className="aboutSection__tagline">{tagline}</h3>
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
 
       <hr className="rule" />
 
-      <section className="skillsSection text-dark">
+      <section className="skillsSection">
         <h2 className="skillsSection__title">My Skills</h2>
         <p className="skillsSection__info">
           Here is a list of web-related skill sets and technologies that I use.
@@ -137,7 +137,7 @@ const IndexPage = ({ data }) => {
 
       <hr className="rule" />
 
-      <section className="postCardsSection text-dark">
+      <section className="postCardsSection">
         <h2 className="postCardsSection__title">Recent Blog Posts</h2>
         <ul className="postCardsSection__list">
           {(posts || []).map(({ node: post }) => (

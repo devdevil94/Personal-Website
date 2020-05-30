@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <header className="pageWrapper__header bg-primary">
         <Navbar />
       </header>
-      <main className="pageWrapper__main bg-white">
+      <main className="pageWrapper__main bg-white text-dark">
         <div className="container">
           {children}
           <footer className="footer">
