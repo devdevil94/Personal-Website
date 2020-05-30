@@ -1,8 +1,3 @@
-.aboutSection,
-.skillsSection {
-  padding: 1.5rem 0;
-}
-
 .aboutSection__name {
   font-size: 4.5rem;
   font-family: "Oswald";
@@ -16,6 +11,7 @@
 }
 .aboutSection__bio {
   line-height: 1.5;
+  padding-bottom: 2rem;
 }
 
 .aboutSection__bio a,
@@ -27,7 +23,7 @@
 .postCardsSection__title {
   font-size: 3rem;
   padding-left: 2rem;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   font-family: "Oswald";
   letter-spacing: 1px;
   position: relative;
@@ -48,7 +44,7 @@
 }
 .skillsSection__list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -85,21 +81,17 @@
   font-size: 1.4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .skillsSection__list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .aboutSection,
-  .skillsSection {
-    padding: 3rem;
+  .skillsSection__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 1200px) {
-  .skillsSection__list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }

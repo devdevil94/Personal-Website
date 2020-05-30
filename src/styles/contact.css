@@ -1,6 +1,3 @@
-.contactPage {
-  padding: 3rem 0;
-}
 .contactPage__title {
   padding-left: 2rem;
   font-size: 4.5rem;
@@ -84,9 +81,6 @@
   }
 }
 @media (min-width: 992px) {
-  .contactPage {
-    padding: 3rem;
-  }
   .inline-fields {
     flex-direction: row;
   }

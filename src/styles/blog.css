@@ -1,7 +1,3 @@
-.blogPage,
-.postPage {
-  padding: 3rem 0;
-}
 .blogPage__title,
 .postPage__title {
   padding-left: 2rem;
@@ -142,14 +138,6 @@
 }
 
 @media (min-width: 992px) {
-  .blogPage,
-  .postPage {
-    padding: 3rem;
-  }
-
-  .postCardsSection {
-    padding: 3rem;
-  }
   .postCardsSection__list,
   .blogPage__list {
     grid-template-columns: 1fr 1fr 1fr;

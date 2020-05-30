@@ -29,7 +29,6 @@
 .navbar__brand {
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Tomorrow";
   letter-spacing: 2px;
   width: 100%;
   position: absolute;
@@ -39,6 +38,7 @@
 }
 
 .navbar__brand a {
+  font-family: "Tomorrow";
   pointer-events: all;
 }
 
