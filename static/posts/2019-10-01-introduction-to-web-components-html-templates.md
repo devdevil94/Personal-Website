@@ -79,6 +79,10 @@ The `<template>` capable of containing any HTML elements inside of it, like `<st
 </template>
 ```
 
+## Demo
+
+Here's the demo on CodePen.<br>
+
 <p class="codepen" data-height="365" data-theme-id="dark" data-default-tab="html,result" data-user="devdevil94" data-slug-hash="PoYrBNx" data-preview="true" style="height: 365px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Templates">
   <span>See the Pen <a href="https://codepen.io/devdevil94/pen/PoYrBNx">
   HTML Templates</a> by Saud Al Alawi (<a href="https://codepen.io/devdevil94">@devdevil94</a>)
@@ -86,4 +90,4 @@ The `<template>` capable of containing any HTML elements inside of it, like `<st
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Using `<template>` is an effective way to create reusable DOM elements. However, `<template>` on its own doesn't encapsulate its styles content which can influence the entire document. In part 2, we will look into how to create a custom element that has its own custom HTML tag.
+Using `<template>` is an effective way to create reusable DOM elements. However, `<template>` on its own doesn't encapsulate its styles content which can influence the entire document. In [part 2](/blog/introduction-to-web-components-custom-elements), we will look into how to create a custom element that has its own custom HTML tag.
