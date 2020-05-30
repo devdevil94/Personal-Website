@@ -1,9 +1,9 @@
 {
   "author": "Saud Alawi",
   "brand": "DevDevil",
-  "tagline": "Front-end Web Developer",
+  "tagline": "Frontend Web Developer",
   "bio": "Hi, my name is Saud and welcome to my website!",
-  "extendedBio": "Lorem ipsum dolor sit amet <a href='/blog'>blog</a>, adipisicing elit. Molestias beatae ea, voluptate corporis animi possimus amet ab illo dignissimos adipisci!",
+  "extendedBio": "I am a web developer specialized in frontend development. I started learning web development in 2018 with HTML & CSS at first and then moved on to JavaScript and ReactJS framework. I focus on employing my JavaScript skills, CSS, HTML, and other tools to build websites and web applications. I also write tutorials and posts in <a href='/blog'>my blog</a> about topics related to anything I learned or am learning.",
   "accounts": {
     "twitter": "https://twitter.com",
     "github": "https://github.com/devdevil94",
