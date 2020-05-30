@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react"
 import Layout from "./../components/Layout"
 import { graphql, Link } from "gatsby"
 import PostCard from "../components/PostCard"
+import Adonis from "../icons/Adonis"
+import Gatsby from "../icons/Gatsby"
+import Next from "../icons/Next"
 
 const IndexPage = ({ data }) => {
   const [profile, setProfile] = useState({})
@@ -28,13 +31,14 @@ const IndexPage = ({ data }) => {
           className="aboutSection__bio"
           dangerouslySetInnerHTML={{ __html: extendedBio }}
         ></p>
+        {/* <!-- <br /> I write tutorials and posts in <a href='/blog'>my blog</a> about topics related to anything I learned or am learning. --> */}
       </section>
 
       <hr className="rule" />
 
       <section className="skillsSection text-dark">
-        <h2 className="skillsSection__title">Things I do</h2>
-        <p className="skillsSection__info">I</p>
+        <h2 className="skillsSection__title">My Skills</h2>
+        <p className="skillsSection__info">I learned several </p>
         <ul className="skillsSection__list">
           <li className="skillBox">
             <div className="skillBox__icons">
@@ -74,6 +78,46 @@ const IndexPage = ({ data }) => {
               <i className="fab fa-sass"></i>
             </div>
             <h3 className="skillBox__title">SASS</h3>
+            <p className="skillBox__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              deleniti.
+            </p>
+          </li>
+          <li className="skillBox">
+            <div className="skillBox__icons">
+              <i className="fab fa-npm"></i>
+            </div>
+            <h3 className="skillBox__title">NPM</h3>
+            <p className="skillBox__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              deleniti.
+            </p>
+          </li>
+          <li className="skillBox">
+            <div className="skillBox__icons">
+              <Adonis />
+            </div>
+            <h3 className="skillBox__title">AdonisJS</h3>
+            <p className="skillBox__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              deleniti.
+            </p>
+          </li>
+          <li className="skillBox">
+            <div className="skillBox__icons">
+              <Gatsby />
+            </div>
+            <h3 className="skillBox__title">GatsbyJS</h3>
+            <p className="skillBox__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              deleniti.
+            </p>
+          </li>
+          <li className="skillBox">
+            <div className="skillBox__icons">
+              <Next />
+            </div>
+            <h3 className="skillBox__title">NextJS</h3>
             <p className="skillBox__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
               deleniti.
