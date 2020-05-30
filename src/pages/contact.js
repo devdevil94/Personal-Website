@@ -23,7 +23,10 @@ export default function ContactPage() {
           <p className="contactPage__info">
             If you're interested in hiring me for a project or just want to say
             hi, you can fill in the contact form below. Also, feel free to
-            follow me on the social channels below &#128526;.
+            follow me on the social channels below.
+            {/* <span role="img" aria-label="Smiley wearing glasses">
+              &#128526;
+            </span> */}
           </p>
           <ul className="socialList">
             <li className="socialList__item">
