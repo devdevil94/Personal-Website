@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <div className="container">
           {children}
           <footer className="footer">
-            <div className="text-center">
+            <div className="text-center text-grey">
               Devdevil © {new Date().getFullYear()}
             </div>
           </footer>
