@@ -8,8 +8,8 @@ export default function Layout({ children }) {
       <header className="pageWrapper__header bg-primary">
         <Navbar />
       </header>
-      <main className="bg-white text-dark">
-        <div className="pageWrapper__main">
+      <main className="pageWrapper__main bg-white text-dark">
+        <div className="pad">
           <div className="container">{children}</div>
         </div>
         <footer className="footer" style={{ backgroundColor: "whitesmoke" }}>

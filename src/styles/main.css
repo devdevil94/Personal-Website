@@ -15,7 +15,7 @@
 .pageWrapper__header {
   width: 100%;
 }
-.pageWrapper__main {
+.pad {
   padding: 3rem 0;
 }
 
@@ -64,10 +64,13 @@
     left: 0;
     top: 0;
   }
+
   .pageWrapper__main {
     margin-left: 28rem;
     overflow-x: hidden;
     width: 100%;
+  }
+  .pad {
     padding: 3rem;
   }
 }
