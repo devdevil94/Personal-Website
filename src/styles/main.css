@@ -29,6 +29,30 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.notFoundPage {
+  min-height: 80vh;
+}
+.notFoundPage__title {
+  padding-left: 2rem;
+  font-size: 4.5rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.notFoundPage__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+.notFound__404 {
+  font-size: 18rem;
+}
+
 @media (min-width: 992px) {
   .pageWrapper {
     flex-direction: row;
