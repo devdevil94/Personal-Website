@@ -11,7 +11,7 @@ seo:
     in the callback function. The Array.every method accepts a callback function and
     returns either true or false based on whether or not all the elements in the array pass
     the test provided in the callback function.
-img: ../images/coding-computer-data-depth-of-field-577585.jpg
+img: ../../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 ### **some()**

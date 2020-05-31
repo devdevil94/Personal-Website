@@ -8,7 +8,7 @@ seo:
   description: >-
     A brief introduction to using template HTML tag to
     create a reusable HTML template.
-img: ../images/codes-coding-computer-programming-270366.jpg
+img: ../../images/codes-coding-computer-programming-270366.jpg
 ---
 
 Web components are a bunch of browser specifications working together to make the process of creating reusable UI components easier. Those specs include:

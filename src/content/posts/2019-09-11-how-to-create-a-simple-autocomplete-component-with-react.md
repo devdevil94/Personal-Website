@@ -7,7 +7,7 @@ date: 2019-09-11T10:00:31.644Z
 seo:
   description: >-
     Create a simple Autocomplete component in React from scratch.
-img: ../images/illuminated-cityscape-against-blue-sky-at-night-316093.jpg
+img: ../../images/illuminated-cityscape-against-blue-sky-at-night-316093.jpg
 ---
 
 There are multiple ways to build an Autocomplete component that you can, for example, use to implement as part of your search component in your app. <br><br>

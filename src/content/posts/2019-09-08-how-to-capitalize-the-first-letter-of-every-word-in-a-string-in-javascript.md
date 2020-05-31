@@ -8,7 +8,7 @@ date: 2019-09-08T08:00:59.321Z
 seo:
   description: >-
     Using JavaScript, here's a quick way to capitalize every first letter in every word in a string.
-img: ../images/apple-coffee-computer-desk-356056.jpg
+img: ../../images/apple-coffee-computer-desk-356056.jpg
 ---
 
 You can capitalize the first letter of every word in a string by following these steps:
