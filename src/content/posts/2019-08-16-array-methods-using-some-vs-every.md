@@ -53,11 +53,9 @@ if (employeesNotPaidWell) {
 }
 
 /*
-
 Output:
 
 Employees are paid well
-
 */
 ```
 
@@ -104,11 +102,9 @@ if (allBooksWrittenByNeil) {
 }
 
 /*
-
 Output:
 
 Not all books are written by Neil Gaiman
-
 */
 ```
 
@@ -128,10 +124,8 @@ if (allBooksHighlyRated) {
 }
 
 /*
-
 Output:
 
 Ratings for all the books are above 5
-
 */
 ```

@@ -46,10 +46,8 @@ const sum = employees.reduce((acc, currentValue) => {
 console.log("Total salaries = ", sum)
 
 /*
-
 Output:
 
 Total salaries =  11900
-
 */
 ```

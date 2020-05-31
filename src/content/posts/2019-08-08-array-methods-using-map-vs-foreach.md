@@ -44,7 +44,6 @@ const display = number => {
 numbers.forEach(display)
 
 /*
-
 Output:
 
 2
@@ -53,7 +52,6 @@ Output:
 2
 1
 9
-
 */
 ```
 
@@ -79,12 +77,10 @@ numbers.forEach(doubleNumbers)
 console.log("Doubled numbers: " + numbers)
 
 /*
-
 Output
 
 Original numbers: 2, 5, 7, 2, 1, 9
 Doubled numbers: 4, 10, 14, 4, 2, 18
-
 */
 ```
 
@@ -137,7 +133,6 @@ console.log("First names:", firstNames)
 console.log("New people array:", newPeopleArray)
 
 /*
-
 Output:
 
 First names:
@@ -148,6 +143,5 @@ New people array:
   { id: 2, name: "Sam Lee" },
   { id: 3, name: "Josh Denver" },
 ]
-
 */
 ```

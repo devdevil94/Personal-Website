@@ -32,11 +32,9 @@ const newString = oldString
 console.log(newString)
 
 /*
-
 Output:
 
 Hello, Can I Talk To You?
-
 */
 ```
 

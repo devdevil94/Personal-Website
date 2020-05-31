@@ -32,11 +32,9 @@ const chars = ["H", "E", "L", "L", "O"]
 console.log(chars.join(""))
 
 /*
-
 Output:
 
 HELLO
-
 */
 ```
 
@@ -51,12 +49,10 @@ console.log(items.join())
 console.log(items.join(" | "))
 
 /*
-
 Output:
 
 Hammer,Sword,Potion,Map,Armor
 Hammer | Sword | Potion | Map | Armor
-
 */
 ```
 
@@ -68,12 +64,10 @@ const todos = ["Go home", "Clean room", "Do homework"]
 console.log(todos.join("\n"))
 
 /*
-
 Output:
 
 Go home
 Clean room
 Do homework
-
 */
 ```

@@ -51,7 +51,6 @@ console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
 
 /*
-
 Output:
 
 Fired employees
@@ -65,7 +64,6 @@ Current employees
   { id: 2, name: "Sam Lee", salary: 2500 },
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
-
 */
 ```
 
@@ -85,7 +83,6 @@ console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
 
 /*
-
 Output:
 
 Fired employees
@@ -99,7 +96,6 @@ Current employees
   { id: 5, name: "Spencer Harris", salary: 2700 },
   { id: 6, name: "Sarah Wallace", salary: 2800 }
 ]
-
 */
 ```
 
@@ -119,7 +115,6 @@ console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
 
 /*
-
 Output:
 
 Fired employees
@@ -134,6 +129,5 @@ Current employees
   { id: 4, name: "Justin Mosely", salary: 3000 },
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
-
 */
 ```

@@ -36,14 +36,12 @@ console.log(numbers.includes(83, 3))
 console.log(numbers.includes(20, 2))
 
 /*
-
 Output:
 
 false
 true
 true
 false
-
 */
 ```
 
@@ -59,11 +57,9 @@ console.log(names.includes("Sam"))
 console.log(names.includes("Sam", 2))
 
 /*
-
 Output:
 
 true
 false
-
 */
 ```
