@@ -101,6 +101,10 @@
   margin-bottom: 1rem;
   padding-top: 1.4rem;
 }
+.postPage__body h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
 .postPage__body p,
 .postPage__body ol,
 .postPage__body ul {
