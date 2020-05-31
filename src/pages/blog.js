@@ -107,7 +107,7 @@ export const recentPostsQuery = graphql`
             img {
               childImageSharp {
                 fluid(maxWidth: 600, quality: 90, maxHeight: 380) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
