@@ -56,6 +56,20 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "devdevil-personal-website",
+        short_name: "devdevil",
+        start_url: "/",
+        background_color: "#00b0cf",
+        theme_color: "#00b0cf",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "minimal-ui",
+        icon: "static/favicon-32x32.png", // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
