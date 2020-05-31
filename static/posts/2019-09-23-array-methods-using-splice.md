@@ -8,7 +8,7 @@ seo:
   description: >-
     In JavaScript, the Array.splice method that is used to add and/or remove elements from an array and it returns
     an array containing the removed elements (if any).
-img: ../images/coding-computer-data-depth-of-field-577585.jpg
+img: ../images/action-android-device-electronics-595804.jpg
 ---
 
 <br>

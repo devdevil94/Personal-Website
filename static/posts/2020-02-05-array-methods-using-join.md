@@ -8,7 +8,7 @@ seo:
   description: >-
     In JavaScript, the Array.join method returns a string that is the result of
     joining the elements of an array with a specific separator between them.
-img: ../images/coding-computer-data-depth-of-field-577585.jpg
+img: ../images/abstract-art-blur-bright-373543.jpg
 ---
 
 ### **join()**

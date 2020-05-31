@@ -8,7 +8,7 @@ seo:
   description: >-
     Custom Elements specification allows you to create reusable components
     that can be defined in HTML with custom tags
-img: ../images/coding-computer-data-depth-of-field-577585.jpg
+img: ../images/personal-computer-motherboard-4316.jpg
 ---
 
 In [part 1](/blog/introduction-to-web-components-html-templates), we created a simple card `<template>` that can be reused in a webpage. We will use the `<template>` tag again with the help of Custom Elements specification to create a simple `<product-card>` element, similar to the ones you see on ecommerce websites.<br>
