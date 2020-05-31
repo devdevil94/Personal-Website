@@ -41,7 +41,7 @@ const BlogPage = ({ data, location }) => {
       }
     }
     updatePosts()
-  }, [page])
+  }, [page, location.search])
 
   const temp = new Array(totalPages).fill(0)
 
