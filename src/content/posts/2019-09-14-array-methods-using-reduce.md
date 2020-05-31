@@ -10,11 +10,7 @@ seo:
 img: ../../images/person-holding-magnifying-glass-712786.jpg
 ---
 
-<br>
-
-### **reduce()**
-
-<br>
+## reduce()
 
 This method accepts a callback function that **'reduces' the elements of an array to a single value**.
 
@@ -27,13 +23,12 @@ const result = array.reduce(function(acc, currentValue, index, arr), initValue);
 - `index` is the index of the current element.
 - `arr` is the array object that is being processed.
 - `initValue` is the initial value passed to the callback.
-  <br>
-
-#### **Examples**
 
 <br>
 
-- ##### Get the sum of values in an array of objects
+### Examples
+
+- Get the sum of values in an array of objects
 
 ```javascript
 const employees = [
@@ -49,10 +44,12 @@ const sum = employees.reduce((acc, currentValue) => {
 }, 0)
 
 console.log("Total salaries = ", sum)
-```
+
+/*
 
 Output:
 
-```
 Total salaries =  11900
+
+*/
 ```

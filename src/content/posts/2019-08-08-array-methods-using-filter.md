@@ -12,11 +12,7 @@ seo:
 img: ../../images/abstract-art-circle-clockwork-414579.jpg
 ---
 
-<br>
-
-### **filter()**
-
-<br>
+## filter()
 
 This method accepts a callback function and returns a new array that contains **the elements that passed the test** in the callback.
 
@@ -31,11 +27,9 @@ const filteredArray = array.filter(function(currentValue, index, arr), thisValue
 
 <br>
 
-#### **Examples**
+### Examples
 
-<br>
-
-- ##### Filtering array elements by a criteria
+- Filtering array elements by a criteria
 
 When given an array like the one in following code, we can filter it to get the results that match a given criteria (or test).
 
@@ -49,6 +43,8 @@ const employees = [
 ]
 ```
 
+<br>
+
 ```javascript
 //Filter employees who earn more than 2000
 const emp1 = employees.filter(employee => {
@@ -56,18 +52,19 @@ const emp1 = employees.filter(employee => {
 })
 
 console.log(emp1)
-```
 
+/*
 Output:
 
-```
 [
   { id: 2, name: "Sam Lee", salary: 2500 },
   { id: 4, name: "Justin Mosely", salary: 3000 },
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
+*/
 ```
 
+<br>
 <br>
 
 ```javascript
@@ -77,20 +74,18 @@ const emp2 = employees.filter(employee => {
 })
 
 console.log(emp2)
-```
 
-<br>
+/*
 Output:
-
-```
 
 [
   { id: 2, name: "Sam Lee", salary: 2500 },
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
-
+*/
 ```
 
+<br>
 <br>
 
 ```javascript
@@ -100,14 +95,14 @@ const emp3 = employees.filter(employee => {
 })
 
 console.log(emp3)
-```
 
+/*
 Output:
 
-```
 [
   { id: 1, name: "Alison Morgan", salary: 2000 },
   { id: 2, name: "Sam Lee", salary: 2500 },
   { id: 3, name: "Josh Denver", salary: 1700 }
 ]
+*/
 ```

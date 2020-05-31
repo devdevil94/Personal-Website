@@ -11,9 +11,7 @@ seo:
 img: ../../images/abstract-art-blur-bright-373543.jpg
 ---
 
-## **join()**
-
-<br>
+## join()
 
 This method **returns a string that is the result of joining the elements of an array with a specific separator between them**.
 
@@ -25,52 +23,57 @@ const resultString = array.join(separator)
 
 <br>
 
-#### Examples
+### Examples
 
-<br>
-
-- ##### Joining an array of characters
+- Joining an array of characters
 
 ```javascript
 const chars = ["H", "E", "L", "L", "O"]
 console.log(chars.join(""))
-```
+
+/*
 
 Output:
 
-```
 HELLO
+
+*/
 ```
 
 <br>
+<br>
 
-- ##### Joining an array of strings
+- Joining an array of strings
 
 ```javascript
 const items = ["Hammer", "Sword", "Potion", "Map", "Armor"]
 console.log(items.join())
 console.log(items.join(" | "))
+
+/*
+
+Output:
+
+Hammer,Sword,Potion,Map,Armor
+Hammer | Sword | Potion | Map | Armor
+
+*/
 ```
 
 <br>
-Output:
-
-```
-Hammer,Sword,Potion,Map,Armor
-Hammer | Sword | Potion | Map | Armor
-```
-
 <br>
 
 ```javascript
 const todos = ["Go home", "Clean room", "Do homework"]
 console.log(todos.join("\n"))
-```
+
+/*
 
 Output:
 
-```
 Go home
 Clean room
 Do homework
+
+*/
 ```

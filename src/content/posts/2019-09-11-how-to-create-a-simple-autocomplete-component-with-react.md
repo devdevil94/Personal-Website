@@ -13,7 +13,8 @@ img: ../../images/illuminated-cityscape-against-blue-sky-at-night-316093.jpg
 There are multiple ways to build an Autocomplete component that you can, for example, use to implement as part of your search component in your app. <br><br>
 The component will be able to display a filtered suggestions list based on the user input.
 
-<br><br>
+<br>
+<br>
 
 ## App Component
 
@@ -38,7 +39,8 @@ const rootElement = document.getElementById("root")
 ReactDOM.render(<App />, rootElement)
 ```
 
-<br><br>
+<br>
+<br>
 
 ## Autocomplete Component
 
@@ -50,6 +52,9 @@ const [filteredSuggestions, setFilteredSuggestions] = useState([])
 const [selectedSuggestion, setSelectedSuggestion] = useState(0)
 const [displaySuggestions, setDisplaySuggestions] = useState(false)
 ```
+
+<br>
+<br>
 
 Declare a `suggestions` array that contain the full list of suggestions.
 
@@ -64,6 +69,9 @@ const suggestions = [
   "The Gunslinger",
 ]
 ```
+
+<br>
+<br>
 
 `Autocomplete` renders a text input as well as a `SuggestionsList` component that receives props and renders the filtered suggestions list accordingly.
 
@@ -88,6 +96,9 @@ return (
 )
 ```
 
+<br>
+<br>
+
 When the user types something in the input, the `onChange` function is called. We use [`filter`](https://web.devdevil.co/array-methods-using-filter) method to 'filter' out the suggstions that don't match the user input.
 
 ```javascript
@@ -104,6 +115,9 @@ const onChange = event => {
 }
 ```
 
+<br>
+<br>
+
 When the user selects a suggestion, `onSelectSuggestion` is called from the `SuggestionList` component to update the state.
 
 ```javascript
@@ -115,7 +129,8 @@ const onSelectSuggestion = index => {
 }
 ```
 
-<br><br>
+<br>
+<br>
 
 ## Suggestions List Component
 
@@ -158,7 +173,8 @@ const SuggestionsList = props => {
 }
 ```
 
-<br><br>
+<br>
+<br>
 
 ## Styling the Components
 
@@ -200,7 +216,8 @@ The final step is to add css code to make the components nice to look at.
 }
 ```
 
-<br><br>
+<br>
+<br>
 
 ## Demo
 

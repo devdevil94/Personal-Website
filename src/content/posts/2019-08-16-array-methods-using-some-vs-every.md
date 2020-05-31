@@ -14,9 +14,7 @@ seo:
 img: ../../images/coding-computer-data-depth-of-field-577585.jpg
 ---
 
-### **some()**
-
-<br>
+## some()
 
 This method accepts a callback function and returns either `true` or `false` based on whether or not **at least one element in the array passes the test** provided in the callback function.
 
@@ -31,11 +29,9 @@ array.some(function(currentValue, index, arr), thisValue);
 
 <br>
 
-#### **Example**
+### Example
 
-<br>
-
-- ##### Check if some numbers in an array are lower/greater than a specific number
+- Check if some numbers in an array are lower/greater than a specific number
 
 ```javascript
 const employees = [
@@ -55,19 +51,20 @@ if (employeesNotPaidWell) {
 } else {
   console.log("Employees are paid well")
 }
-```
+
+/*
 
 Output:
 
-```
 Employees are paid well
+
+*/
 ```
-
-<br><br>
-
-### **every()**
 
 <br>
+<br>
+
+## every()
 
 This method accepts a callback function and returns either `true` or `false` based on whether or not **all the elements in the array pass the test** provided in the callback function.
 
@@ -82,11 +79,9 @@ array.every(function(currentValue, index, arr), thisValue);
 
 <br>
 
-#### **Example**
+### Example
 
-<br>
-
-- ##### Check if all elements in an array meet a specific criteria/test
+- Check if all elements in an array meet a specific criteria/test
 
 ```javascript
 const books = [
@@ -107,14 +102,17 @@ if (allBooksWrittenByNeil) {
 } else {
   console.log("Not all books are written by Neil Gaiman")
 }
-```
+
+/*
 
 Output:
 
-```
 Not all books are written by Neil Gaiman
+
+*/
 ```
 
+<br>
 <br>
 
 ```javascript
@@ -128,10 +126,12 @@ if (allBooksHighlyRated) {
 } else {
   console.log("Not all the books are rated above 5")
 }
-```
+
+/*
 
 Output:
 
-```
 Ratings for all the books are above 5
+
+*/
 ```

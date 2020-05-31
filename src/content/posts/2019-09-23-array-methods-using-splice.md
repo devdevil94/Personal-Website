@@ -8,14 +8,10 @@ seo:
   description: >-
     In JavaScript, the Array.splice method that is used to add and/or remove elements from an array and it returns
     an array containing the removed elements (if any).
-img: ../../images/action-android-device-electronics-595804.jpg
+img: ../../images/close-up-of-computer-screen-325111.jpg
 ---
 
-<br>
-
-### **splice()**
-
-<br>
+## splice()
 
 This method **adds and/or removes elements from an array** and returns an array containing the removed elements (if any).
 
@@ -29,11 +25,9 @@ const removedElements = array.splice(startIndex, numOfRemovedElements, element1,
 
 <br>
 
-#### Examples
+### Examples
 
-<br>
-
-For the next examples, we will be using the `employees` array as the original array.
+For the next examples, we will be using the `employees` array as the original array that we are going to modify.
 
 ```javascript
 const employees = [
@@ -45,18 +39,21 @@ const employees = [
 ]
 ```
 
-- ##### Remove elements from an array
+<br>
+<br>
+
+- Remove elements from an array
 
 ```javascript
 const firedEmployees = employees.splice(2, 2)
 
 console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
-```
+
+/*
 
 Output:
 
-```
 Fired employees
 [
   { id: 3, name: "Josh Denver", salary: 1700 },
@@ -69,11 +66,13 @@ Current employees
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
 
+*/
 ```
 
 <br>
+<br>
 
-- ##### Add elements to an array
+- Add elements to an array
 
 ```javascript
 const firedEmployees = employees.splice(5, 0, {
@@ -84,12 +83,11 @@ const firedEmployees = employees.splice(5, 0, {
 
 console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
-```
 
-<br>
+/*
+
 Output:
 
-```
 Fired employees
 []
 Current employees
@@ -102,11 +100,13 @@ Current employees
   { id: 6, name: "Sarah Wallace", salary: 2800 }
 ]
 
+*/
 ```
 
 <br>
+<br>
 
-- ##### Replace elements of an array
+- Replace elements of an array
 
 ```javascript
 const firedEmployees = employees.splice(0, 1, {
@@ -117,11 +117,11 @@ const firedEmployees = employees.splice(0, 1, {
 
 console.log("Fired employees", firedEmployees)
 console.log("Current employees", employees)
-```
+
+/*
 
 Output:
 
-```
 Fired employees
 [
   { id: 1, name: "Alison Morgan", salary: 2000 }
@@ -134,4 +134,6 @@ Current employees
   { id: 4, name: "Justin Mosely", salary: 3000 },
   { id: 5, name: "Spencer Harris", salary: 2700 }
 ]
+
+*/
 ```

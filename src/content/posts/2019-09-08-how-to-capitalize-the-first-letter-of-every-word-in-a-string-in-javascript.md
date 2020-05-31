@@ -17,7 +17,9 @@ You can capitalize the first letter of every word in a string by following these
 2. Use [`map`](https://web.devdevil.co/array-methods-using-map-vs-foreach) method to loop through the words array to capitalize the first letter of every word.
 3. Use `join` to convert the words array back to a string.
 
-**Example**
+<br>
+
+### Example
 
 ```javascript
 const oldString = "Hello, can i talk to you?"
@@ -28,13 +30,18 @@ const newString = oldString
   .join(" ")
 
 console.log(newString)
-```
+
+/*
 
 Output:
 
-```
 Hello, Can I Talk To You?
+
+*/
 ```
+
+<br>
+<br>
 
 You can check out the demo below where you can enter a string and every first letter in every word in it will be capitalized by pressing the button.
 
